@@ -12,6 +12,8 @@ set cursorline
 set ruler
 set t_Co=256
 
+autocmd FileType make setlocal noexpandtab
+
 highlight Comment cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 
 highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
