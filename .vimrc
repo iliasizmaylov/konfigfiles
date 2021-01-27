@@ -9,8 +9,10 @@ set number
 set hlsearch 
 set ignorecase
 set cursorline
-set ruler
 set t_Co=256
+
+set statusline=%f%m%r%h%w\ [%Y]\ [0x%02.2B]%<\ %F%4v,%4l\ %3p%%\ of\ %L\ lines
+set laststatus=2
 
 autocmd FileType make setlocal noexpandtab
 
