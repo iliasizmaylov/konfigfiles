@@ -13,6 +13,7 @@ set t_Co=256
 
 set statusline=%f%m%r%h%w\ [%Y]\ [0x%02.2B]%<\ %F%4v,%4l\ %3p%%\ of\ %L\ lines
 set laststatus=2
+set formatoptions+=r
 
 autocmd FileType make setlocal noexpandtab
 
@@ -24,3 +25,11 @@ autocmd InsertLeave * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 g
 
 highlight LineNr cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 highlight CursorLineNr cterm=bold ctermfg=3 ctermbg=NONE
+
+set splitbelow
+set splitright
+
+hi StatusLine ctermfg=255 ctermbg=232
+hi StatusLineNC ctermfg=244 ctermbg=235
+
+hi TabLineFill ctermfg=242 ctermbg=232
